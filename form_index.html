@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Űrlap</h1>
+    <h3>Adatok megadása</h3>
+
+    <form method="post">
+        <fieldset>
+            <legend>Főbb adatok</legend>
+        <p>
+            Neve:<br>
+            <input type="text" placeholder="Ide írd a neved!" name="neve">
+        </p>
+
+        <p>
+            E-mail cím:<br>
+            <input type="email" name="email" placeholder="Ide írd az E-mail címed!" >
+        </p>
+
+        <p>
+            Jelszó:<br>
+            <input type="password" name="jelszó" id="jelszó">
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>További adatok</legend>
+        <p>
+            Életkor:<br>
+            <input type="number" name="kor" id="kor">
+        </p>
+
+        <p>
+            Születési dátum:<br>
+            <input type="date" name="szulda" id="szuldat">
+        </p>
+
+        <p>
+            Fényképe:<br>
+            <input type="file" name="fenykep">
+        </p>
+
+        <p>
+            Színe:<br>
+            <input type="color" name="szin" id="szin">
+        </p>
+
+        <p>
+            Hobbi:<br>
+            <input type="checkbox" name="hobbi" id="hobbi1"> Horgászat<br>
+            <input type="checkbox" name="hobbi" id="hobbi2"> Programozás<br>
+            <input type="checkbox" name="hobbi" id="hobbi3"> A társadalom nem funkcionáló részébe tartozom<br>
+            
+        </p>
+
+        <p>
+            Anyanyelv:<br>
+            <input type="radio" name="nyelv" id="nyelv1" value="magyar"> <label for="nyelv1">Magyar</label><br>
+            <input type="radio" name="nyelv" id="nyelv2" value="angol"> <label for="nyelv2">Angol</label><br>
+            <input type="radio" name="nyelv" id="nyelv3" value="német"> <label for="nyelv3">Német</label><br>
+            <input type="radio" name="nyelv" id="nyelv4" value="egyéb"> <label for="nyelv4">Egyéb</label><br>
+        </p>
+
+        <p>
+            Lakhelye:<br>
+            <select name="lakhely" id="lakhely" size="5" multiple>
+                <option value="mar">Marcali</option>
+                <option value="bp">Budapest</option>
+                <option value="kapvar">Kaposvár</option>
+
+            </select>
+
+        
+        </p>
+        <p>
+            Megjegyzés:<br>
+            <textarea name="megjegyzes" id="megjegyzes" cols="50" rows="10" placeholder="A megjegyzés helye" ></textarea> 
+        </p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Elküldés" onclick="ellenoriz()">
+        <input type="reset" value="Törlés">
+    </form>
+</body>
+</html>
